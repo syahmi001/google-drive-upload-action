@@ -5,10 +5,10 @@ Github action to upload a file to Google Drive using a service account.
 #### Simple example:
 ```
 steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Upload a file to Google Drive
-      uses: willo32/google-drive-upload-action@v1
+      uses: syahmi001/google-drive-upload-action@master
       with:
         target: <LOCAL_PATH_TO_YOUR_FILE>
         credentials: ${{ secrets.<YOUR_SERVICE_ACCOUNT_CREDENTIALS> }}
